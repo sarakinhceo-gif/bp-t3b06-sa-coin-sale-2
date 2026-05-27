@@ -3,127 +3,389 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>오시는 길 & 가격 정보 | 상암 코인노래방 상세 매뉴얼</title>
-  <meta name="description" content="가성비 끝판왕 코노의 성지를 짓기 위해 발로 뛰었음. 나 역시 학창 시절부터 혼코노 즐기던 매니아였는데, 상암 학원가 근처 코노 갔다가 마이크 지직거리고 에코 썩어있어서 삑사리 지대 나고 개쪽팔렸던 한 서린 추억이 있다. 그때 맹세했지. 내 강서 마포 바닥에 동전 하나...">
+  <title>상암 코인노래방 상세정보 및 이용절차 | 상암 코인노래방 할인</title>
+  <meta name="description" content="상암역 더블역세권 직장인 및 대학생 혼코노족을 위해 가격 완전 혜자롭고 시간제 정찰 할인이 빵빵한 코노 상세 안내. 위치 시그널과 정찰 가격 안내 수록.">
+  <meta name="keywords" content="상암 코인노래방 할인, 상암 코인노래방 위치, 상암 코인노래방 가격, 상암 코인노래방 시스템">
   <link rel="canonical" href="https://t3b06-sa-coin-sale-2.pages.dev/about.html">
-  <meta name="bpaas-design-system" content="street-brutalist">
-  <meta name="bpaas-design-theme" content="kr-street-brutalist">
+  <meta name="bpaas-design-system" content="midnight-glass">
+  <meta name="bpaas-design-theme" content="kr-t3b06-sa-coin-sale-2">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     
-      :root {
-        --bg: #ffffff;
-        --fg: #000000;
-        --accent: #ff5500;
-        --border: #000000;
+    :root {
+      --bg-dark: #0a0f1d;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --primary-neon: #1e3a8a;
+      --accent-neon: #06b6d4;
+      --text-main: #f4f4f5;
+      --text-muted: #a1a1aa;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    
+    .glow-header {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 20px;
+    }
+    
+    .logo-glow {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #fff;
+      text-decoration: none;
+      background: linear-gradient(135deg, #fff, var(--accent-neon));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: var(--accent-neon);
+      text-shadow: 0 0 8px var(--accent-neon);
+    }
+    
+    .hero-glow {
+      padding: 140px 20px 100px;
+      text-align: center;
+      background: radial-gradient(circle at top, var(--primary-neon) 0%, transparent 75%);
+      position: relative;
+    }
+    
+    .hero-glow h1 {
+      font-size: 3.2rem;
+      font-weight: 900;
+      margin-bottom: 24px;
+      letter-spacing: -0.06em;
+      line-height: 1.25;
+    }
+    
+    .gradient-txt {
+      background: linear-gradient(135deg, #fff, var(--accent-neon));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    
+    .hero-glow p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 750px;
+      margin: 0 auto 35px;
+    }
+    
+    .phone-bar {
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
+      padding: 18px;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin: 25px auto;
+      max-width: 600px;
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+    
+    .phone-bar a {
+      color: var(--accent-neon);
+      text-decoration: none;
+      transition: text-shadow 0.3s;
+    }
+    
+    .phone-bar a:hover {
+      text-shadow: 0 0 10px var(--accent-neon);
+    }
+    
+    .neon-btn {
+      display: inline-block;
+      padding: 15px 36px;
+      background: linear-gradient(135deg, var(--primary-neon), var(--accent-neon));
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      border-radius: 9999px;
+      box-shadow: 0 4px 22px rgba(236, 72, 153, 0.35);
+      transition: all 0.3s ease;
+      letter-spacing: 0.03em;
+    }
+    
+    .neon-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(236, 72, 153, 0.65);
+    }
+    
+    .sec-wrap {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    
+    .glass-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 45px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 45px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .glass-box h2 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      margin-bottom: 28px;
+      color: #fff;
+      border-left: 5px solid var(--accent-neon);
+      padding-left: 20px;
+      letter-spacing: -0.04em;
+    }
+    
+    .glass-box p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      text-align: justify;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 36px;
+    }
+    
+    .mini-card {
+      background: rgba(255, 255, 255, 0.015);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .mini-card:hover {
+      border-color: var(--accent-neon);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+    }
+    
+    .mini-card h3 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+    
+    .mini-card p {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+    
+    .premium-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+      color: var(--text-main);
+    }
+    
+    .premium-table th {
+      background: rgba(255,255,255,0.03);
+      padding: 16px;
+      border-bottom: 2px solid var(--border-color);
+      font-weight: 800;
+      text-align: left;
+    }
+    
+    .premium-table td {
+      padding: 16px;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 1.05rem;
+    }
+    
+    .premium-table tbody tr:hover {
+      background: rgba(255,255,255,0.01);
+    }
+    
+    .ugc-review {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      margin-top: 24px;
+    }
+    
+    .reviewer-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      color: var(--accent-neon);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    
+    .reviewer-text {
+      font-size: 1.02rem;
+      color: var(--text-main);
+      font-style: italic;
+    }
+    
+    footer {
+      background: rgba(0, 0, 0, 0.5);
+      border-top: 1px solid var(--border-color);
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+    
+    footer p {
+      margin-bottom: 12px;
+    }
+    
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+    
+    footer a:hover {
+      color: var(--accent-neon);
+    }
+    
+    @media(max-width: 768px) {
+      .hero-glow h1 {
+        font-size: 2.3rem;
       }
-      body { background: var(--bg); color: var(--fg); font-family: 'Pretendard', sans-serif; line-height: 1.7; }
-      header { border-bottom: 4px solid var(--border); padding: 20px 0; background: #ffff00; }
-      .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-      .hero { padding: 80px 0; border-bottom: 4px solid var(--border); text-align: left; background: #f0f0f0; }
-      .hero h1 { font-size: 4rem; font-weight: 900; text-transform: uppercase; -webkit-text-stroke: 1px #000; color: var(--border); margin-bottom: 20px; transform: rotate(-1deg); }
-      .btn { display: inline-block; padding: 15px 35px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 900; border: 4px solid var(--border); box-shadow: 6px 6px 0px #000; transition: all 0.1s; }
-      .btn:hover { transform: translate(3px, 3px); box-shadow: 3px 3px 0px #000; }
-      .content-section { padding: 60px 0; border-bottom: 4px solid var(--border); }
-      .card { border: 4px solid var(--border); padding: 30px; background: #fff; box-shadow: 8px 8px 0px #000; margin-bottom: 40px; }
-      .review-grid { display: grid; grid-template-columns: 1fr; gap: 30px; margin-top: 40px; }
-      .review-card { border: 4px solid var(--border); padding: 24px; background: #fff; box-shadow: 6px 6px 0px #000; }
-    
-    table { width: 100%; border-collapse: collapse; margin-top: 24px; border: 2px solid var(--border); }
-    th, td { padding: 12px; border: 1px solid var(--border); text-align: center; }
-    th { background: rgba(0,0,0,0.02); font-weight: bold; }
-    header .container { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 1.5rem; font-weight: 900; text-decoration: none; color: var(--fg); letter-spacing: -0.05em; }
-    nav a { color: var(--fg); text-decoration: none; font-weight: 700; margin-left: 12px; font-size: 0.9rem; }
-    nav a:hover { color: var(--accent); }
-    footer { border-top: 1px solid var(--border); padding: 40px 0; background: rgba(0,0,0,0.01); color: var(--muted); font-size: 0.85rem; }
-    footer .container { display: flex; justify-content: space-between; align-items: center; }
-    footer a { color: var(--muted); text-decoration: none; font-weight: bold; }
-    footer a:hover { color: var(--accent); }
-    .p-bar { background: var(--accent); color: #fff; padding: 10px 0; text-align: center; font-weight: 700; font-size: 0.95rem; }
-    .p-bar a { color: #fff; text-decoration: underline; }
+      .nav-links {
+        display: none;
+      }
+      .glass-box {
+        padding: 28px;
+      }
+      .premium-table {
+        font-size: 0.9rem;
+      }
+    }
+  
   </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "상암 코인노래방 상세정보",
+      "url": "https://t3b06-sa-coin-sale-2.pages.dev/about.html",
+      "description": "상암 코인노래방의 상세 위치, 이용 프로세스 및 예약 가격 안내."
+    }
+  </script>
 </head>
 <body>
-  <div class="p-bar">🚨 형님들 눈탱이 없는 리얼 정찰제 문의: <a href="tel:010-6279-0862">📞 010-6279-0862</a> (24시간 실시간 대기)</div>
-  <header>
-    <div class="container">
-      <a href="index.html" class="logo">상암.코인노래방</a>
-      <nav><a href="index.html">홈</a> | <a href="about.html">정보</a></nav>
+
+  <header class="glow-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-glow">상암 코인노래방 포털</a>
+      <nav class="nav-links">
+        <a href="index.html">홈</a>
+        <a href="about.html">상세정보</a>
+        
+      </nav>
     </div>
   </header>
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>오시는 길 &amp; 투명한 가격 안내</h1>
-        <p style="font-size:1.25rem; opacity:0.9;">형이 직접 엄선한 최강의 코스 라인업과 100% 실명 정찰제 가격 테이블</p>
-      </div>
-    </section>
-    
-    <section class="content-section">
-      <div class="container">
-        <div class="card">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">형이 샵을 직접 엄선하고 관리하게 된 리얼 스토리</h2>
-          <p style="font-size:1.1rem; line-height:1.9; margin-bottom:20px;">가성비 끝판왕 코노의 성지를 짓기 위해 발로 뛰었음. 나 역시 학창 시절부터 혼코노 즐기던 매니아였는데, 상암 학원가 근처 코노 갔다가 마이크 지직거리고 에코 썩어있어서 삑사리 지대 나고 개쪽팔렸던 한 서린 추억이 있다. 그때 맹세했지. 내 강서 마포 바닥에 동전 하나도 귀하게 쓰이는 역대급 하이엔드 코인노래방을 만들겠다고. 그렇게 다듬어진 예약 라인이 010-6279-0862다.</p>
-        </div>
 
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">100% 투명 정찰제 요금표</h2>
-          <p style="font-size:1.05rem; color:var(--muted); margin-bottom:15px;">※ 카드로 결제하시든 현금으로 결제하시든 예약 특가 그대로 완벽 적용됩니다. 추가요금 요구 시 형이 전액 환불해 줌.</p>
-          
-        <table>
+  <section class="hero-glow">
+    <h1><span class="gradient-txt">DETAILED INFO</span> 상세 정보</h1>
+    <p>상암 로컬로서 형들이 헛돈 쓰는 일 절대 없도록 확실한 랜드마크와 투명 주종 가격을 공개합니다.</p>
+    <div class="phone-bar">
+      📞 실시간 직통 전화: <a href="tel:010-6279-0862">010-6279-0862</a>
+    </div>
+  </section>
+
+  <main class="sec-wrap">
+    <div class="glass-box">
+      <h2>스토리 & 이용 동기</h2>
+      <p>코노 가성비 끝판왕의 성지를 구축하기 위해 청춘을 바쳤음. 나 또한 젊은 시절 노래 연습하겠다고 상암 학원가 주변 코노를 전전하다가, 지직거리는 마이크 삑사리에 목 나가고 코인 다 뜯겨서 개빡쳤던 한 맺힌 과거 추억이 있다. 그때 다짐했지. 내 마포 강서 일대 하늘 아래에선 동전 한 닢을 넣어도 세계 최고의 하이파이 오디오 마이크와 깨끗한 위생 공기청정 속에서 손맛 나게 부를 수 있는 인생 코노를 구축하겠다고. 그렇게 1등 할인 혜택으로 완성해 놓은 라인이 바로 010-6279-0862다.</p>
+    </div>
+
+    <div class="glass-box">
+      <h2>상세 위치 시그널 & 인프라</h2>
+      <p>📌 상세 찾아오시는 길 및 랜드마크 안내: 상암 메인 핫플레이스 역전 메인 광장 도보 30초 컷 현대식 대형 상가 타워 2층에 입점해 있어서 눈비가 쏟아져도 뛰어가기 개꿀이며, 인근 핫플 맛집들과 바로 연결되어 데이트 마지막 힐링 코스 완성으로 진짜 완벽하게 끝판왕이다.</p>
+    </div>
+
+    <div class="glass-box">
+      <h2>투명 정찰 가격표</h2>
+      <p>애초에 빌지 장난을 원천 차단하기 위해 주종 및 시간 코스 견적을 명확히 고시합니다.</p>
+      
+        <table class="premium-table">
           <thead>
-            <tr><th>코인 할인 패키지</th><th>곡 수/시간</th><th>기본가</th><th>예약 할인가 (010-6279-0862)</th></tr>
+            <tr><th>코인 할인 패키지 목록</th><th>곡 수 / 이용 시간</th><th>정상가</th><th>예약 특가 (010-6279-0862)</th></tr>
           </thead>
           <tbody>
-            <tr><td>동전 코인 패키지 A</td><td>12곡</td><td>5,000원</td><td><strong>4,000원</strong></td></tr>
-            <tr><td>동전 대량 패키지 B</td><td>30곡</td><td>10,000원</td><td><strong>8,000원</strong></td></tr>
-            <tr><td>시간제 단체 패키지 C</td><td>60분 무제한</td><td>15,000원</td><td><strong>12,000원</strong></td></tr>
+            <tr><td>가성비 동전 코너 패키지 A</td><td>12곡</td><td>5,000원</td><td><strong>4,000원</strong></td></tr>
+            <tr><td>동전 왕창 대량 패키지 B</td><td>30곡</td><td>10,000원</td><td><strong>8,000원</strong></td></tr>
+            <tr><td>시간제 단체 무제한 패키지 C</td><td>60분 무제한</td><td>15,000원</td><td><strong>12,000원</strong></td></tr>
           </tbody>
         </table>
       
-          <div style="margin-top:30px; text-align:center;">
-            <a href="tel:010-6279-0862" class="btn">실시간 견적 및 즉시 예약: 📞 010-6279-0862</a>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">상세 위치 시그널 및 시설 안내</h2>
-          <p style="font-size:1.1rem; line-height:1.9;">상세 찾아오시는 길: 상암 지하철역 출구에서 도보 30초 컷 상가 2층에 위치해 있어 눈비 와도 뛰어가기 너무 편함. 주변 유명 코스들과 직결되어 있어서 데이트 코스 마지막 방점으로 완벽하다.</p>
-        </div>
-
-        <div style="margin-top:60px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">단골 고객 추천 실시간 찐소감</h2>
-          <div class="review-grid">
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>최요한</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
-      </div>
-      <p style="font-size:0.9rem; color:var(--muted);">위생 상태가 코노 중에 진짜 탑입니다. 갈 때마다 소독 깨끗이 되어 있어서 믿고 부릅니다.</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-23</small>
     </div>
-  
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>백호진</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
+
+    <div class="glass-box">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <div style="margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">
+        <h4 style="color: var(--accent-neon); margin-bottom: 10px;">Q. 예약 없이 바로 매장으로 가도 되나요?</h4>
+        <p style="color: var(--text-muted); font-size: 1rem;">A. 주말이나 피크 타임에는 룸이 풀로 차서 워크인으로 오시면 대기 시간이 2~3시간씩 걸리거나 헛걸음하기 쉽습니다. 형들의 골든타임을 사수하고 실시간 대기실 가동 룸을 확보하기 위해 오시기 최소 30분 전 010-6279-0862 예약센터로 전화 한 통만 때려주시길 정중히 권합니다!</p>
       </div>
-      <p style="font-size:0.9rem; color:var(--muted);">당산 코인노래방 할인 꿀 정보 진짜 대박이네요. 실장님 010-6279-0862 연락하니 엄청 친절하십니다.</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-28</small>
-    </div>
-  </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div>&copy; 2026 상암 코인노래방 스페셜 가이드. All Rights Reserved.</div>
       <div>
-        <a href="index.html">홈</a> | <a href="about.html">정보</a>
+        <h4 style="color: var(--accent-neon); margin-bottom: 10px;">Q. 정찰가 외에 현장 빌지 추가금 청구가 있나요?</h4>
+        <p style="color: var(--text-muted); font-size: 1rem;">A. 단 10원짜리 하나도 허위나 부가 요금을 추가 청구하지 않습니다. 예약 단계에서 합의된 정찰 요금 그대로 카드/현금 깔끔 정산 마감해 드리니 눈탱이 걱정은 싹 접어두셔도 좋습니다!</p>
       </div>
     </div>
+  </main>
+
+  <footer>
+    <p><strong>상암 코인노래방 찐후기 가이드 포털</strong></p>
+    <p>주소: 서울특별시 상암구 일대 | 연락처: 010-6279-0862</p>
+    <p>
+      <a href="index.html">홈</a> | 
+      <a href="about.html">상세정보</a>
+      
+    </p>
+    <p style="margin-top: 16px; opacity: 0.5;">&copy; 2026 상암 코인노래방 Portal. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
   </footer>
+
 </body>
 </html>
